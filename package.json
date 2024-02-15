@@ -12,12 +12,15 @@
     "color": "^4.2.3",
     "next": "14.1.0",
     "react": "^18",
+    "react-color": "^2.19.3",
     "react-dom": "^18",
     "react-linear-gradient-picker": "^3.0.1"
   },
   "devDependencies": {
+    "@types/color": "^3.0.6",
     "@types/node": "^20",
     "@types/react": "^18",
+    "@types/react-color": "^2.17.11",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",

@@ -22,6 +22,12 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  font-family: sans-serif;
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
 a {
   color: inherit;
   text-decoration: none;

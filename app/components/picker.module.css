@@ -1,0 +1,54 @@
+.picker {
+  margin: 0 40px;
+}
+
+.picker :global(.palette) {
+  position: relative;
+  border: 2px solid white;
+  box-shadow: 0 0 0 3px black;
+  border-radius: 5px;
+  overflow: hidden;
+  touch-action: none;
+}
+
+.picker :global(.gp) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+.picker :global(.csh) {
+  height: 40px !important;
+  position: absolute !important;
+  touch-action: none;
+}
+
+.picker :global(.cs) {
+  position: absolute;
+  transition: box-shadow 0.1s;
+  height: 48px;
+  width: 12px;
+  top: -4px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 9999px;
+  overflow: hidden;
+  box-shadow: 0 0 0 2px black;
+}
+
+.picker :global(.cs.active) {
+  box-shadow:
+    0 0 0 2px black,
+    0 0 0 5px white;
+}
+
+.picker :global(.cs) div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+}
