@@ -1,5 +1,6 @@
 import { Hue, Saturation, EditableInput } from 'react-color/lib/components/common';
 import { CustomPicker, CustomPickerProps, CustomPickerInjectedProps } from 'react-color';
+import { Swatch } from './swatch';
 import styles from './color-picker.module.css';
 import { CSSProperties } from 'react';
 import Color from 'color';
@@ -44,6 +45,7 @@ export function ColorPicker(props: ColorPickerProps) {
           </div>
         </div>
       </div>
+      <Swatch onChange={props.onChange} />
     </div>
   )
 }
@@ -74,6 +76,13 @@ const HuePointer = ({ hsl }: any) => {
   );
 }
 
+const SaturationPointer = ({ hex }: any) => (
+  <div
+    className={styles['saturation-pointer']}
+    style={{ backgroundColor: hex }}
+  />
+)
+
 const CustomHuePicker = (props: CustomPickerInjectedProps) => {
   return (
     <div className={styles['hue-picker']}>
@@ -85,7 +94,7 @@ const CustomHuePicker = (props: CustomPickerInjectedProps) => {
 const CustomSaturationPicker = (props: CustomPickerInjectedProps) => {
   return (
     <div className={styles['saturation-picker']}>
-      <Saturation {...props} />
+      <Saturation {...props} pointer={SaturationPointer} />
     </div>
   );
 }

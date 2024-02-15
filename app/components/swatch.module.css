@@ -1,0 +1,25 @@
+.swatch {
+  margin-top: 30px;
+  display: flex;
+  height: 200px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-left: 1px;
+  flex: 1;
+}
+
+.color {
+  display: inline-block;
+  content: ' ';
+  cursor: pointer;
+  flex: 1;
+}
+
+.color:focus {
+  border: 1px solid white;
+}
