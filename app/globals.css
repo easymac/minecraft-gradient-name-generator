@@ -50,3 +50,11 @@ button:hover {
   cursor: pointer;
   background: #6940FF;
 }
+
+@font-face {
+  font-family: Minecraftia;
+  src: url('/Minecraftia-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
