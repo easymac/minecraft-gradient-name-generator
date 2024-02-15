@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { Preview } from './components/preview';
 import { Picker } from './components/picker';
-import { parseUrl } from './utils';
+import { Code } from './components/code';
+import { Gradient, parseUrl } from './utils';
 import styles from "./page.module.css";
 
 import DefaultGradients from './data/gradients.json';
@@ -45,11 +46,11 @@ export default function Home() {
   }
 
   return (
-    <main className={styles.main}>
+    <main className={styles['main']}>
       <h1>Gradient generator</h1>
-      <div className={styles.instructions}>
+      <p className={styles['instructions']}>
         Click username to edit preview.
-      </div>
+      </p>
       <Preview
         inputString={inputString}
         setInputString={setInputString}
@@ -58,6 +59,10 @@ export default function Home() {
       <button onClick={randomize}>Randomize</button>
       <button onClick={reverse}>Reverse</button>
       <Picker gradient={gradient} setGradient={setGradient} />
+      <p className={styles['instructions']}>
+        Send this code to your favorite staff member!
+      </p>
+      <Code inputString={inputString} gradient={gradient as Gradient} />
     </main>
   );
 }

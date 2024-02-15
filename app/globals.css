@@ -33,3 +33,20 @@ a {
   text-decoration: none;
 }
 
+button {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  background: #3A18B8;
+  padding: 15px 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #6940FF;
+}

@@ -1,0 +1,31 @@
+.code {
+  background: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.code input {
+  background: transparent;
+  color: inherit;
+  outline: none;
+  border: 2px solid #444;
+  padding: 10px;
+  height: 30px;
+  flex-grow: 1;
+}
+
+.code button {
+  background: #3A18B8;
+  padding: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 0.75em;
+  cursor: pointer;
+}
+
+.code button:hover {
+  background: #4A28C8;
+}

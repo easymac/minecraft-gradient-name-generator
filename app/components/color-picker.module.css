@@ -9,10 +9,14 @@
   position: relative;
 }
 
-.saturation-picker > div,
-.saturation-picker :global(.saturation-white),
-.saturation-picker :global(.saturation-black) {
+.saturation-picker > div {
+  border-radius: 6px;
+}
+.saturation-picker :global(.saturation-white) {
   border-radius: 5px;
+}
+.saturation-picker :global(.saturation-black) {
+  border-radius: 4px;
 }
 
 .hue-picker {

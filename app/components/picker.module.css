@@ -1,5 +1,5 @@
 .picker {
-  margin: 0 40px;
+  
 }
 
 .picker :global(.palette) {
@@ -15,8 +15,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 800px;
-  margin: auto;
 }
 
 .picker :global(.csh) {
