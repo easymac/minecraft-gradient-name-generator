@@ -3,6 +3,7 @@ import { CustomPicker, CustomPickerProps, CustomPickerInjectedProps } from 'reac
 import { Swatch } from './swatch';
 import styles from './color-picker.module.css';
 import Color from 'color';
+
 interface ColorPickerProps extends CustomPickerProps {
   onChange: (color: any) => void;
 }
@@ -11,7 +12,7 @@ export function ColorPicker(props: ColorPickerProps) {
   const handleChange = (c: any) => {
     if (c.hex) {
       try {
-        const newColor = Color(c.Hex);
+        const newColor = Color(c.hex);
         props.onChange({ hex: newColor.hex()})
       } catch (e) {
         // Not a color. Do nothing.
