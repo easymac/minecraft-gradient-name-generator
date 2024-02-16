@@ -63,6 +63,9 @@ export default function Home() {
         Send this code to your favorite staff member!
       </p>
       <Code inputString={inputString} gradient={gradient as Gradient} />
+      <p className={styles['instructions']}>
+        Made with <span className={styles['heart']}>♥</span> by <a href="https://github.com/easymac" target="_blank">easymac</a>
+      </p>
     </main>
   );
 }

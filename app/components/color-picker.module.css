@@ -56,6 +56,12 @@
   box-shadow: 0 0 0 3px black;
 }
 
+.hue-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .input-wrapper {
   display: flex;
   text-align: center;
@@ -85,6 +91,14 @@
 .input-wrapper > :global(div):nth-child(n + 2) {
   width: 80px;
   margin-left: 3px;
+}
+
+.input-wrapper label {
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #999;
+  text-align: center;
 }
 
 .instructions {
