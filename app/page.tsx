@@ -47,7 +47,7 @@ export default function Home() {
 
   return (
     <main className={styles['main']}>
-      <h1>Gradient generator</h1>
+      <h1>Minecraft Gradient Generator</h1>
       <p className={styles['instructions']}>
         Click username to edit preview.
       </p>

@@ -1,3 +1,76 @@
 .name {
   font-family: Minecraftia;
 }
+
+.preview {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.name {
+  position: relative;
+  font-family: Minecraftia;
+  font-size: 42px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.editable {
+  z-index: 4;
+  color: transparent;
+  caret-color: white;
+  position: relative;
+  top: -1px;
+  left: -2px;
+
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.visible {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  z-index: 3;
+}
+
+.shadow {
+  z-index: 2;
+  color: #3e3e3e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate(5px, 5px);
+}
+
+.background-buttons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+}
+
+.background-buttons button {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.background-buttons button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}

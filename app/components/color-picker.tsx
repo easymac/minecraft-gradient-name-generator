@@ -2,11 +2,7 @@ import { Hue, Saturation, EditableInput } from 'react-color/lib/components/commo
 import { CustomPicker, CustomPickerProps, CustomPickerInjectedProps } from 'react-color';
 import { Swatch } from './swatch';
 import styles from './color-picker.module.css';
-import { CSSProperties } from 'react';
 import Color from 'color';
-
-import { ColorState } from 'react-color';
-
 interface ColorPickerProps extends CustomPickerProps {
   onChange: (color: any) => void;
 }

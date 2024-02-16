@@ -42,10 +42,14 @@ export const Preview = (
     </span>
   ));
 
-  const backgroundUrl = BACKGROUNDS[backgroundIndex];
+  const background = BACKGROUNDS[backgroundIndex % BACKGROUNDS.length];
+
 
   return (
-    <div className={styles['preview']}>
+    <div
+      className={styles['preview']}
+      style={{ backgroundImage: `url(${background.src})`}}
+    >
       <div className={styles['name']}>
         <input
           className={styles['editable']}
